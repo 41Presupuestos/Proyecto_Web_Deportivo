@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Reserva_Pista_Deportiva"
+                   namespace="Reserva_Pista_Deportiva.Models"
+                   default-lazy="false">
+  <class name="Usuario" table="Usuario">
+    <id name="Id" access="property" column="Id_Usuario">
+      <generator class="native" />
+    </id>
+    <property name="NombreUsuario" column="Nombre_Usuario" />
+    <property name="FechaCreacion" column="Fecha_Creacion"/>
+    <property name="Password" column="Password"/>
+    <property name="EsAdministrador" column="Es_Administrador"/>
+  </class>
+</hibernate-mapping>
